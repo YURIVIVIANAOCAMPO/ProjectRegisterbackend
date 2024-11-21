@@ -6,7 +6,7 @@ export default (sequelize) => {
     documentId: { type: DataTypes.BIGINT, allowNull: false, unique: true },
     birthDate: { type: DataTypes.DATE, allowNull: false },
     address: { type: DataTypes.STRING, allowNull: false },
-    phone: { type: DataTypes.BIGINT, allowNull: false },
+    phone: { type: DataTypes.STRING, allowNull: false },
     email: { type: DataTypes.STRING, allowNull: false, unique: true },
     gender: { type: DataTypes.ENUM("male", "female", "other"), allowNull: false },
   });
